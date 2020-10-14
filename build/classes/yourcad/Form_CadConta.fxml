@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane fx:id="mainPane" prefHeight="458.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yourcad.Form_CadContaController">
+   <top>
+      <AnchorPane fx:id="ancPane_TelaInicio" prefHeight="26.0" prefWidth="686.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="menuBar_TelaInicial" layoutY="2.0" prefHeight="25.0" prefWidth="686.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Cadastro">
+                     <items>
+                        <MenuItem fx:id="menuItem_CadCliente" mnemonicParsing="false" onAction="#gotoCliente" text="Cliente" />
+                        <MenuItem fx:id="menuItem_CadConta" mnemonicParsing="false" onAction="#gotoConta" text="Conta" />
+                        <MenuItem fx:id="menuItem_CadConcessionaria" mnemonicParsing="false" onAction="#gotoConcessionaria" text="Concessionaria" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Pesquisa">
+                  <items>
+                    <MenuItem fx:id="menuItem_PesqCliente" mnemonicParsing="false" onAction="#gotoCliente" text="Cliente" />
+                    <MenuItem fx:id="menuItem_PesqConta" mnemonicParsing="false" onAction="#gotoConta" text="Conta" />
+                    <MenuItem fx:id="menuItem_PesqConcessionaria" mnemonicParsing="false" onAction="#gotoConcessionaria" text="Concessionaria" />
+                  </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
